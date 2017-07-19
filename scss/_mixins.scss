@@ -1,5 +1,3 @@
-@import "compass/css3/animation";
-
 // rem fallback - credits: http://zerosixthree.se/
 @function calculateRem($size) {
   $remSize: $size / 10px;

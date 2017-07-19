@@ -4,7 +4,7 @@
     min-width: 30rem;
     display: flex;
     flex-direction: column;
-    margin: 5.5rem 0;
+    margin: 0 0 5.5rem;
 
     .image {
         height: 17rem;
@@ -18,7 +18,6 @@
         background: $white;
         height: 6rem;
         padding: 1.3rem 2.3rem;
-
 
         &:hover {
             background: $dark-purple;
@@ -45,6 +44,7 @@
         a, a:hover, a:active, a:visited, a:link {
             color: $purple;
             transition: none;
+            max-width: 20rem;
 
             &:hover {
 

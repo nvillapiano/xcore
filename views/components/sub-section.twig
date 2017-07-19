@@ -15,7 +15,7 @@
         &nbsp;
     </div>
     <div class="meta">
-        <a href="{{linkUrl}}">
+        <a href="{{ subSectionTitle|raw|lower|replace( {' ': '-', '<br>': '', '/': ''} ) }}">
             <h6>
                 {{subSectionTitle|raw}}
             </h6>

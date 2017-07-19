@@ -1,20 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="23.8085 24 0 24 0 0.0005 23.8085 0.0005"></polygon>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Top-Nav" transform="translate(-1315.000000, -45.000000)">
-            <g id="Page-1" transform="translate(1315.000000, 45.000000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <g id="Clip-2"></g>
-                <path d="M2.854,9.73 C2.854,5.938 5.939,2.853 9.731,2.853 C13.523,2.853 16.608,5.938 16.608,9.73 C16.608,13.522 13.523,16.607 9.731,16.607 C5.939,16.607 2.854,13.522 2.854,9.73 L2.854,9.73 Z M23.809,21.646 L17.604,15.441 C18.772,13.835 19.461,11.862 19.461,9.73 C19.461,4.365 15.097,0 9.731,0 C4.366,0 0,4.365 0,9.73 C0,15.096 4.366,19.46 9.731,19.46 C11.765,19.46 13.654,18.834 15.218,17.762 L21.456,24 L23.809,21.646 Z" id="Fill-1" fill="#404B97" mask="url(#mask-2)"></path>
-            </g>
+<svg id="search" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.81 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: #404b97;
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="23.81" height="24" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <polygon id="path-1" class="cls-1" points="23.81 24 0 24 0 0 23.81 0 23.81 24"/>
+      </g>
+    </mask>
+  </defs>
+  <title>search</title>
+  <g id="Symbols">
+    <g id="Top-Nav">
+      <g id="Page-1">
+        <g class="cls-2">
+          <path id="Fill-1" class="cls-3" d="M2.85,9.73a6.88,6.88,0,1,1,6.88,6.88A6.88,6.88,0,0,1,2.85,9.73Zm21,11.92-6.2-6.2a9.73,9.73,0,1,0-2.39,2.32L21.46,24Z"/>
         </g>
+      </g>
     </g>
+  </g>
 </svg>

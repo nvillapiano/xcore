@@ -35,9 +35,32 @@
     }
 
     .search-trigger {
+        width: 2.4rem;
+
+        svg {
+
+            .cls-1 {
+                fill: $white;
+            }
+
+            .cls-2 {
+                mask: url(#mask);
+            }
+
+            .cls-3 {
+                fill: $purple;
+            }
+        }
 
         &:hover {
             cursor: pointer;
+
+            svg {
+
+                .cls-3 {
+                    fill: $blue;
+                }
+            }
         }
     }
 }
