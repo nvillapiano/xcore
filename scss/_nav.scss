@@ -1,5 +1,45 @@
 // _nav.scss
 
 .nav {
-    background: red;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: $contentWidth;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    .logo {
+        min-width: 16rem;
+
+        svg {
+
+        }
+    }
+
+    .nav-links {
+
+        a, a:hover, a:active, a:visited, a:link {
+            @include gotham-bold;
+            font-size: 1.4rem;
+            color: $dark-grey;
+            text-transform: uppercase;
+            margin: 0 7.5rem 0 0;
+
+            &:hover {
+                color: $blue;
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+
+    .search-trigger {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

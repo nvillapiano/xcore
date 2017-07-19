@@ -1,6 +1,8 @@
 html, body {
   @include font-smoothing;
   @include transition( opacity 0.3s ease-out );
+  font-size: 62.5%;
+  @include gotham-medium;
 }
 
 *, *:before, *:after {
@@ -46,3 +48,7 @@ video.responsive-video {
     height: 100%;
   }
 }
+
+// Variables
+
+$contentWidth: 110rem;
