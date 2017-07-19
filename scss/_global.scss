@@ -3,6 +3,8 @@ html, body {
   @include transition( opacity 0.3s ease-out );
   font-size: 62.5%;
   @include gotham-medium;
+  color: $dark-grey;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -51,4 +53,4 @@ video.responsive-video {
 
 // Variables
 
-$contentWidth: 110rem;
+$contentWidth: 112rem;

@@ -23,4 +23,26 @@ $app->get( '/', function() use ( $app )
   ));
 });
 
+$app->get( '/home', function() use ( $app )
+{
+  $title = "Home";
+  $body_class = "home fade";
+  $app->render( 'home.twig', array(
+    'title' => $title,
+    'body_class' => $body_class,
+    'is_dev' => IS_DEV,
+  ));
+});
+
+$app->get( '/business-solutions', function() use ( $app )
+{
+  $title = "Business Solutions";
+  $body_class = "business-solutions fade";
+  $app->render( 'business-solutions.twig', array(
+    'title' => $title,
+    'body_class' => $body_class,
+    'is_dev' => IS_DEV,
+  ));
+});
+
 $app->run();

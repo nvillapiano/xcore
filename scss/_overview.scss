@@ -1,0 +1,50 @@
+// _overview.scss
+
+.overview {
+    background: url('../images/xcore-bg.png') no-repeat $purple;
+    background-size: 50%;
+    background-position: 145% 0%;
+    background-attachment: fixed;
+    color: $white;
+    padding: 5.5rem 0 13rem;
+
+    .overview-wrapper {
+        @include contentWidth();
+    }
+
+    .breadcrumbs {
+        font-size: 1.5rem;
+        @include gotham-book();
+        margin: 0 0 3rem;
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $white;
+            @include gotham-book();
+
+            &.active {
+                @include gotham-medium();
+                letter-spacing: -0.48px;
+            }
+
+            &:hover {
+
+            }
+        }
+    }
+
+    h2 {
+        margin: 0 0 4.5rem;
+    }
+
+    h4 {
+        width: 100%;
+        max-width: 82rem;
+    }
+
+    .sub-sections {
+        display: flex;
+        width: 94rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

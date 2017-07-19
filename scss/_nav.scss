@@ -3,11 +3,9 @@
 .nav {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: $contentWidth;
-    margin: 0 auto;
     justify-content: space-between;
-    padding: 3rem 0;
+    @include contentWidth();
+    padding: 3rem 2rem;
 
     .logo {
         min-width: 16rem;

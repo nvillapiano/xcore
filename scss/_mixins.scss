@@ -47,4 +47,8 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-
+@mixin contentWidth {
+    width: 100%;
+    max-width: $contentWidth;
+    margin: 0 auto;
+}
