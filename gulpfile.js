@@ -15,7 +15,8 @@ gulp.task('sass', function () {
     .src(input)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('/maps'))
+    // .pipe(autoprefixer())
     .pipe(gulp.dest(output));
 });
 

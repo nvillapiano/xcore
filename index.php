@@ -45,4 +45,15 @@ $app->get( '/business-solutions', function() use ( $app )
   ));
 });
 
+$app->get( '/healthcare', function() use ( $app )
+{
+  $title = "Healthcare";
+  $body_class = "healthcare fade";
+  $app->render( 'healthcare.twig', array(
+    'title' => $title,
+    'body_class' => $body_class,
+    'is_dev' => IS_DEV,
+  ));
+});
+
 $app->run();

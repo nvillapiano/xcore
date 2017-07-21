@@ -10,35 +10,87 @@
     %}
  #}
 
-<article class="sub-section">
-    <div class="image" style="background-image: url('{{imgUrl|raw}}');">
-        &nbsp;
-    </div>
-    <div class="meta">
-        <a href="{{ subSectionTitle|raw|lower|replace( {' ': '-', '<br>': '', '/': ''} ) }}">
-            <h6>
+{#
+    {% include 'components/sub-section.twig' with
+        {
+            isUseCase: bool,
+            subSectionTitle: '',
+            description: ''
+        }
+    %}
+ #}
+
+{% if isUseCase %}
+    <article class="sub-section">
+        <div class="copy">
+            <h5>
                 {{subSectionTitle|raw}}
-            </h6>
-        </a>
-        <div class="caret">
-            <svg id="caret" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.75 20.41">
-              <title>caret</title>
-              <g id="Homepage">
-                <g id="Business-Solutions">
-                  <g id="Group">
-                    <g id="Group-13">
-                      <g id="Group-12">
-                        <g id="Group-7">
-                          <g id="Group-2">
-                            <polygon id="Page-1" class="cls-1" points="2.6 0 0 2.55 7.65 10.2 0 17.86 2.6 20.41 12.76 10.2 2.6 0"/>
+            </h5>
+            <p>
+                {{description}}
+            </p>
+        </div>
+        <div class="meta">
+            <a href="{{ subSectionTitle|raw|lower|replace( {' ': '-', '<br>': '', '/': '', '(': '', ')': ''} ) }}">
+                <h6>
+                    Learn More
+                </h6>
+            </a>
+            <div class="caret">
+                <svg id="caret" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.75 20.41">
+                  <title>caret</title>
+                  <g id="Homepage">
+                    <g id="Business-Solutions">
+                      <g id="Group">
+                        <g id="Group-13">
+                          <g id="Group-12">
+                            <g id="Group-7">
+                              <g id="Group-2">
+                                <polygon id="Page-1" class="cls-1" points="2.6 0 0 2.55 7.65 10.2 0 17.86 2.6 20.41 12.76 10.2 2.6 0"/>
+                              </g>
+                            </g>
                           </g>
                         </g>
                       </g>
                     </g>
                   </g>
-                </g>
-              </g>
-            </svg>
+                </svg>
+            </div>
         </div>
-    </div>
-</article>
+    </article>
+{% else %}
+    <article class="sub-section">
+        <div class="image" style="background-image: url('{{imgUrl|raw}}');">
+            &nbsp;
+        </div>
+        <div class="meta">
+            <a href="{{ subSectionTitle|raw|lower|replace( {' ': '-', '<br>': '', '/': ''} ) }}">
+                <h6>
+                    {{subSectionTitle|raw}}
+                </h6>
+            </a>
+            <div class="caret">
+                <svg id="caret" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.75 20.41">
+                  <title>caret</title>
+                  <g id="Homepage">
+                    <g id="Business-Solutions">
+                      <g id="Group">
+                        <g id="Group-13">
+                          <g id="Group-12">
+                            <g id="Group-7">
+                              <g id="Group-2">
+                                <polygon id="Page-1" class="cls-1" points="2.6 0 0 2.55 7.65 10.2 0 17.86 2.6 20.41 12.76 10.2 2.6 0"/>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+            </div>
+        </div>
+    </article>
+{% endif %}
+
+

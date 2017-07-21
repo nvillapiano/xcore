@@ -1,0 +1,31 @@
+<!-- Overview: use cases -->
+
+<section class="overview--use-cases">
+    <h3>
+        <a href="#useCases">{{title}} Use Cases</a>
+    </h3>
+</section>
+
+<section id="useCases">
+    {% include 'components/sub-section.twig' with
+        {
+            isUseCase: true,
+            subSectionTitle: 'Near Field Communication (NFC)',
+            description: 'A nurse enters the patient room to greet the patient and begin taking vitals. Traditionally, the nurse will begin by logging into the system, entering credentials, unlocking the equipment, and entering data to prepare the doctor.'
+        }
+    %}
+    {% include 'components/sub-section.twig' with
+        {
+            isUseCase: true,
+            subSectionTitle: 'One-Time Passcode (OTP)',
+            description: 'Some of the biggest security concerns for the healthcare industry are maintain HIPAA compliance, insurance fraud, etc… (provide figures) With the added security of OTP, made possible on-card with X-Core, etc'
+        }
+    %}
+    {% include 'components/sub-section.twig' with
+        {
+            isUseCase: true,
+            subSectionTitle: 'Near Field Communication (NFC)',
+            description: 'A nurse enters the patient room to greet the patient and begin taking vitals. Traditionally, the nurse will begin by logging into the system, entering credentials, unlocking the equipment, and entering data to prepare the doctor.'
+        }
+    %}
+</section>
