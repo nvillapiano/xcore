@@ -56,4 +56,15 @@ $app->get( '/healthcare', function() use ( $app )
   ));
 });
 
+$app->get( '/near-field-communication-nfc', function() use ( $app )
+{
+  $title = "Near Field Communication (NFC)";
+  $body_class = "near-field-communication-nfc fade";
+  $app->render( 'near-field-communication-nfc.twig', array(
+    'title' => $title,
+    'body_class' => $body_class,
+    'is_dev' => IS_DEV,
+  ));
+});
+
 $app->run();

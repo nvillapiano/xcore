@@ -1,0 +1,49 @@
+// Font mixins
+
+@mixin gotham-medium {
+  font-family: "gotham-medium",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin gotham-book {
+  font-family: "gotham-book",sans-serif;
+  font-style: normal;
+  // font-weight: 300;
+}
+
+@mixin gotham-bold {
+  font-family: "gotham-bold",sans-serif;
+  font-style: normal;
+  // font-weight: 600;
+}
+
+
+// Font face
+
+@font-face {
+    font-family: "gotham-book";
+    src: url("../fonts/Gotham-Book.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/Gotham-Book.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/Gotham-Book.svg#Mark") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "gotham-medium";
+    src: url("../fonts/Gotham-Medium.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/Gotham-Medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/Gotham-Medium.svg#Mark") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "gotham-bold";
+    src: url("../fonts/Gotham-Bold.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/Gotham-Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/Gotham-Bold.svg#Mark") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}

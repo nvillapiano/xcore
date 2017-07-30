@@ -1,0 +1,66 @@
+// _nav.scss
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include contentWidth();
+    padding: 3rem 2rem;
+
+    .logo {
+        min-width: 16rem;
+
+        svg {
+
+        }
+    }
+
+    .nav-links {
+
+        a, a:hover, a:active, a:visited, a:link {
+            @include gotham-bold;
+            font-size: 1.4rem;
+            color: $dark-grey;
+            text-transform: uppercase;
+            margin: 0 7.5rem 0 0;
+
+            &:hover {
+                color: $blue;
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+
+    .search-trigger {
+        width: 2.4rem;
+
+        svg {
+
+            .cls-1 {
+                fill: $white;
+            }
+
+            .cls-2 {
+                mask: url(#mask);
+            }
+
+            .cls-3 {
+                fill: $purple;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            svg {
+
+                .cls-3 {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// _contact.scss
+
+.contact {
+    color: $white;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 60rem;
+        @include gotham-book();
+        font-size: 3rem;
+        padding: 5.5rem 0;
+
+        span {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 0 5.5rem;
+
+            label {
+
+            }
+
+            %inputStyles {
+                width: 40rem;
+                border: 0.1rem solid $white;
+                background: none;
+                padding: 1rem;
+                color: $white;
+
+                &:focus {
+                    outline: none;
+                    border-color: $blue;
+                }
+            }
+
+            input {
+                @extend %inputStyles;
+            }
+
+            textarea {
+                @extend %inputStyles;
+                min-height: 22rem;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+        }
+    }
+}
