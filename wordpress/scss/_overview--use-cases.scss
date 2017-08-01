@@ -19,16 +19,18 @@
 
 #useCases {
     display: flex;
-    width: 94rem;
+    width: 100%;
+    max-width: 94rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 30vw 0 0;
 
     .sub-section {
-        width: 3rem;
+        width: calc( ( 100% / 3 ) - ( 5rem / 2 ) );
         background: $white;
         position: relative;
         justify-content: space-between;
+        margin: 0 2.5rem 5.5rem 0;
 
         .copy {
             color: $purple;

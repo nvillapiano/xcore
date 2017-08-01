@@ -10,55 +10,47 @@
                 <?php echo the_title(); ?>
             </h2>
             <h4>
-                <?php the_content(); ?>
+                <!-- <?php the_content(); ?> -->
+                <?php echo wp_strip_all_tags( get_the_content() ); ?>
             </h4>
         <?php endwhile; endif;?>
 
-<!--         {% if hasUseCases %}
-            {% include 'components/overview--use-cases.twig' with
-                {
-
-                }
-            %}
-        {% else %}
-            <div class="sub-sections">
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Financial /  Transaction Card'
-                    }
-                %}
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Logical /  Access Card'
-                    }
-                %}
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Retail'
-                    }
-                %}
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Gaming'
-                    }
-                %}
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Card Manufacturing'
-                    }
-                %}
-                {% include 'components/sub-section.twig' with
-                    {
-                        imgUrl: 'images/financial-transaction.png',
-                        subSectionTitle: 'Healthcare'
-                    }
-                %}
-            </div>
-        {% endif %} -->
+        <div class="sub-sections">
+            <?php query_posts( array ('post_type' => 'industry', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <article class="sub-section">
+                    <div class="image" style="background-image: url('<?php the_field('thumbnail'); ?>')">
+                        &nbsp;
+                    </div>
+                    <div class="meta">
+                        <a href="<?php the_permalink(); ?>">
+                            <h6>
+                                <?php the_title(); ?>
+                            </h6>
+                        </a>
+                        <div class="caret">
+                            <svg id="caret" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.75 20.41">
+                              <title>caret</title>
+                              <g id="Homepage">
+                                <g id="Business-Solutions">
+                                  <g id="Group">
+                                    <g id="Group-13">
+                                      <g id="Group-12">
+                                        <g id="Group-7">
+                                          <g id="Group-2">
+                                            <polygon id="Page-1" class="cls-1" points="2.6 0 0 2.55 7.65 10.2 0 17.86 2.6 20.41 12.76 10.2 2.6 0"/>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            <?php endwhile; ?>
+        </div>
     </div>
 </section>

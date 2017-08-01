@@ -18,6 +18,7 @@
         </span>
 
         <ul id="searchUl">
+
             <li><a href="healthcare">Healthcare</a></li>
             <li><a href="#">Lorem</a></li>
             <li><a href="#">ipsum</a></li>

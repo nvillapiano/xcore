@@ -25,9 +25,10 @@
 
     .sub-sections {
         display: flex;
-        width: 94rem;
+        width: 100%;
+        max-width: 94rem;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin: 5.5rem 0 0;
     }
 }

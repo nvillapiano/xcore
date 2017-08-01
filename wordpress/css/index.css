@@ -775,7 +775,7 @@ video.responsive-video {
   display: flex;
   width: 94rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 5.5rem 0 0;
 }
 
@@ -783,7 +783,7 @@ video.responsive-video {
   min-width: 30rem;
   display: flex;
   flex-direction: column;
-  margin: 0 0 5.5rem;
+  margin: 0 2.5rem 5.5rem 0;
 }
 
 .sub-section .image {
