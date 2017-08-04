@@ -7,8 +7,9 @@
 
     <title>XCore | <?php echo the_title(); ?></title>
 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.bxslider.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/index.css" type="text/css">
-    <!-- <?php wp_head(); ?> -->
+
   </head>
   <body <?php body_class(); ?>>
 

@@ -23,7 +23,7 @@ function smoothScrolling() {
 }
 // Contact trigger
 function contactTrigger() {
-    $('.contact-trigger, .contact .x-close').click( function() {
+    $('.contact-trigger, .contact .x-close, #contact-us .button').click( function() {
         $('body, html').toggleClass('overflow');
         $('.modal.contact').toggleClass('active');
         $('.contact span:first-of-type input').focus();
@@ -63,6 +63,35 @@ function search() {
         }
     }
 }
+// Hamburger
+function hamburger() {
+    $('.hamburger, .contact-trigger, .search-trigger').click( function() {
+        $('.links-wrapper').toggleClass('show');
+        if ( $('.hamburger').hasClass('x-close') === false  ) {
+            $('.hamburger').addClass('contract');
+            setTimeout( function() {
+                $('.hamburger').addClass('x-close');
+            }, 300)
+        } else {
+            $('.hamburger').removeClass('x-close');
+            setTimeout( function() {
+                $('.hamburger').removeClass('contract');
+            }, 300)
+        }
+    })
+}
+// Team member modal
+function teamMemberModal() {
+    $('.team-member-trigger').click( function() {
+        var slug = this.id;
+        console.log('slug:', slug);
+        $('.' + slug).addClass('active');
+    })
+    //
+    $('.team-member .x-close').click( function() {
+        $(this).closest('section').removeClass('active');
+    })
+}
 //
 //
 //
@@ -73,3 +102,10 @@ fadeIn();
 smoothScrolling();
 contactTrigger();
 searchTrigger();
+hamburger();
+teamMemberModal();
+
+//Slider
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});

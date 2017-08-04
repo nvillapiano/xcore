@@ -7,7 +7,18 @@ Template Name: Case Study
 <div class="page-wrapper business-solutions">
     <div class="fold">
         <div class="slider">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/slider-fpo.png">
+
+        <?php echo do_shortcode('[bxslider id="52"]') ?>
+
+        <?php
+        // TO SHOW THE PAGE CONTENTS
+        while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+                <?php the_content(); ?> <!-- Page Content -->
+        <?php
+        endwhile; //resetting the page loop
+        wp_reset_query(); //resetting the page query
+        ?>
+
         </div>
 
         <div class="content">

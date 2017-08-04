@@ -55,4 +55,25 @@
             }
         }
     }
+
+    @media only screen and (max-width: $phone) {
+
+        input {
+            font-size: 3rem;
+        }
+
+        ul {
+
+            li {
+
+                a, a:hover, a:active, a:visited, a:link {
+                    font-size: 3rem;
+
+                    &:hover {
+
+                    }
+                }
+            }
+        }
+    }
 }

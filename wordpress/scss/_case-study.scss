@@ -5,7 +5,7 @@
     color: $white;
 
     .hero {
-        background: url('../images/xcore-bg.png') 125% center no-repeat;
+        background: url('../images/xcore-bg.png') 125% top no-repeat;
         background-color: $white;
         background-size: contain;
         color: $grey62;
@@ -66,5 +66,47 @@
     .use-cases {
         @include contentWidth();
         padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: $laptop) {
+
+        .hero {
+            background: url('../images/xcore-bg.png') 55rem bottom no-repeat;
+            background-color: $white;
+            background-size: contain;
+
+            .hero-wrapper {
+
+                .copy {
+                    width: calc(100% - 35rem);
+
+                    .breadcrumbs {
+                        // white-space: nowrap;
+                    }
+                }
+
+                .image {
+                    max-width: 45rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet) {
+
+        .hero {
+
+            .hero-wrapper {
+
+                .copy {
+                    width: 100%;
+                }
+
+                .image {
+                    display: none;
+                }
+            }
+        }
+
     }
 }

@@ -23,7 +23,7 @@ function smoothScrolling() {
 }
 // Contact trigger
 function contactTrigger() {
-    $('.contact-trigger, .contact .x-close').click( function() {
+    $('.contact-trigger, .contact .x-close, #contact-us .button').click( function() {
         $('body, html').toggleClass('overflow');
         $('.modal.contact').toggleClass('active');
         $('.contact span:first-of-type input').focus();

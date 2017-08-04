@@ -1,0 +1,27 @@
+// _faq.scss
+
+.faq {
+
+    .use-case {
+
+        .copy {
+
+            a, a:hover, a:active, a:visited, a:link {
+                border-bottom: 0.1rem solid $white;
+                color: $white;
+                margin: 5rem 0 0;
+                display: inline-block;
+
+                &:hover {
+                }
+            }
+
+            h2 {
+
+                @media only screen and (max-width: $tablet) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

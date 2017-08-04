@@ -2,7 +2,7 @@
 
 .overview {
     background: url('../images/xcore-bg.png') no-repeat $purple;
-    background-size: 50%;
+    background-size: contain;
     background-position: 101% 0%;
     background-attachment: fixed;
     color: $white;
@@ -30,5 +30,12 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 5.5rem 0 0;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        background: url('../images/xcore-bg.png') no-repeat $purple;
+        background-size: cover;
+        background-position: left 0%;
+        background-attachment: fixed;
     }
 }

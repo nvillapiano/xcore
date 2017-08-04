@@ -1,12 +1,11 @@
 <!-- Template Part - Case study -->
 
 <section class="case-study">
-
     <div class="hero">
         <div class="hero-wrapper">
             <div class="copy">
                 <div class="breadcrumbs">
-                    <?php get_template_part('breadcrumbs','top'); ?>
+                    <?php get_template_part('breadcrumbs','use_case'); ?>
                 </div>
                 <h2>
                     <?php the_title(); ?>
@@ -21,16 +20,16 @@
                         <a href="#what-is-it">What is it?</a>
                     </h3>
                     <h3>
-                        <a href="usage-today">Usage Today</a>
+                        <a href="#usage-today">Usage Today</a>
                     </h3>
                     <h3>
-                        <a href="adapting-technology-to-the-card">Adapting technology to the card</a>
+                        <a href="#adapting-technology-to-the-card">Adapting technology to the card</a>
                     </h3>
                     <h3>
-                        <a href="xcores-process">XCore's process</a>
+                        <a href="#xcores-process">XCore's process</a>
                     </h3>
                     <h3>
-                        <a href="contact-us">CONTACT US</a>
+                        <a href="#contact-us">CONTACT US</a>
                     </h3>
                 </section>
             </div>
@@ -39,7 +38,6 @@
         </div>
     </div>
     <section class="use-cases">
-
         <article class="use-case" id="what-is-it">
             <div class="use-case--wrapper">
                 <div class="copy">
@@ -100,7 +98,7 @@
                 </div>
             </div>
         </article>
-        <article class="use-case is-contac" id="contact-us">
+        <article class="use-case is-contact" id="contact-us">
             <div class="use-case--wrapper">
                 <div class="copy">
                     <h2>
@@ -115,7 +113,5 @@
                 </div>
             </div>
         </article>
-
     </section>
-
 </section>

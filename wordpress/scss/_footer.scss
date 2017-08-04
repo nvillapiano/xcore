@@ -9,6 +9,35 @@
     background: $light-grey;
     position: relative;
 
+    @media only screen and (max-width: $phone) {
+        flex-direction: column;
+        padding: 4rem 2rem;
+
+        .col {
+
+            &:first-of-type {
+
+                small {
+                    display: none;
+                }
+            }
+
+            &:last-of-type {
+
+                small {
+
+                    &:last-of-type {
+
+                        &:after {
+                            content: '©2017 All Rights Reserved.';
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .col {
 
         img {

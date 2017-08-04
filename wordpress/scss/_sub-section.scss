@@ -2,10 +2,19 @@
 
 .sub-section {
     // min-width: 30rem;
-    width: calc( ( 100% / 3 ) - ( 5rem / 2 ) );
+    width: calc( ( 100% / 3 ) - ( 5rem / 3 ) );
     display: flex;
     flex-direction: column;
-    margin: 0 2.5rem 5.5rem 0;
+    margin: 0 0 5.5rem 2.5rem;
+
+    &:first-of-type, &:nth-of-type(4) {
+        margin: 0 0 5.5rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+        width: 100%;
+        margin: 0 0 3.5rem;
+    }
 
     .image {
         height: 17rem;
@@ -19,6 +28,33 @@
         background: $white;
         height: 6rem;
         padding: 1.3rem 2.3rem;
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $purple;
+            transition: none;
+            // max-width: 20rem;
+            position: relative;
+            display: block;
+            width: 100%;
+
+            &:hover {
+
+            }
+        }
+
+        .caret {
+            width: 1.3rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            svg {
+
+                .cls-1 {
+                    fill: $purple;
+                }
+            }
+        }
 
         &:hover {
             // background: $dark-purple;
@@ -39,27 +75,6 @@
                     .cls-1 {
                         fill: $white;
                     }
-                }
-            }
-        }
-
-        a, a:hover, a:active, a:visited, a:link {
-            color: $purple;
-            transition: none;
-            max-width: 20rem;
-
-            &:hover {
-
-            }
-        }
-
-        .caret {
-            width: 1.3rem;
-
-            svg {
-
-                .cls-1 {
-                    fill: $purple;
                 }
             }
         }

@@ -15,15 +15,25 @@
 
         .row {
 
+            @media only screen and (max-width: $phone) {
+                flex-direction: column;
+                padding: 3rem 2rem;
+            }
+
             .col {
                 width: 100%;
-                margin: 7rem 6.5rem;
+                margin: 7rem 5rem;
                 text-align: center;
                 border: 0.2rem solid $purple;
                 padding: 6.5rem 9rem 8.5rem;
                 position: relative;
                 color: $purple;
                 transition: none;
+
+                @media only screen and (max-width: $phone) {
+                    padding: 4rem 4rem;
+                    margin: 4rem auto 4rem;
+                }
 
                 .icon {
                     position: absolute;
@@ -68,6 +78,62 @@
                     .icon {
                         background: transparent;
                     }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet) {
+
+        .home-nav {
+
+            .row {
+
+                .col {
+                    margin: 7rem 2rem;
+                    padding: 6.5rem 4rem 8.5rem
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $phone) {
+
+        .home-nav {
+
+            .row {
+                flex-direction: column;
+                padding: 3rem 2rem;
+
+                .col {
+                    padding: 4rem 4rem;
+                    margin: 4rem auto 4rem;
+                }
+            }
+        }
+    }
+}
+
+// Slider overrides
+.bx-wrapper {
+    margin: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: initial;
+
+    .bx-pager {
+        bottom: 2rem;
+        padding: 0;
+
+        &.bx-default-pager {
+
+            a, a:hover, a:active, a:visited, a:link {
+                background: $grey62;
+
+                &.active {
+                    background: $blue;
                 }
             }
         }

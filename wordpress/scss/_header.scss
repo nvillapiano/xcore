@@ -1,5 +1,17 @@
 // _header.scss
 
 .header {
+    background: $white;
 
+    @media only screen and (max-width: $tablet) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 101;
+
+        & + section, & + div {
+            margin-top: 6.6rem;
+        }
+    }
 }

@@ -19,6 +19,7 @@
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.bxslider.min.js"></script>
 
     </body>
 </html>
