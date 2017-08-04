@@ -66,6 +66,32 @@ function blankslate_comments_number( $count )
         }
     }
 function my_custom_login() {
-echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/login.css" />';
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/css/index.css" />';
 }
 add_action('login_head', 'my_custom_login');
+
+add_action('USC_add_meta_box','usc_add_metabox_to_ctp');
+
+function usc_add_metabox_to_ctp($obj){
+
+    $post_types = array(
+        'user_content',
+    );
+
+    foreach ( $post_types as $post_type ) {
+        add_meta_box(
+            'User_specific_content',
+            __( 'User specific content box'),
+            array($obj,'User_specific_content_box_inner'),
+            $post_type
+        );
+    }
+}
+
+function my_myme_types($mime_types){
+    $mime_types['svg'] = 'image/svg+xml'; //Adding svg extension
+    $mime_types['psd'] = 'image/vnd.adobe.photoshop'; //Adding photoshop files
+    $mime_types['psd'] = 'application/x-indesign'; //Adding indesign
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);

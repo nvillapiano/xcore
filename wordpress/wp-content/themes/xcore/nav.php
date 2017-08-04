@@ -9,7 +9,7 @@
     <div class="links-wrapper">
         <div class="nav-links">
             <a href="<?php echo get_site_url(); ?>/solutions">Solutions</a>
-            <a href="<?php echo get_site_url(); ?>/services">Services</a>
+            <a href="<?php echo get_site_url(); ?>/solutions">Services</a>
             <a href="<?php echo get_site_url(); ?>/company">Company</a>
             <a href="#" class="contact-trigger">Contact</a>
             <a href="<?php echo get_site_url(); ?>/login">Login</a>

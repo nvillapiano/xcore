@@ -1,0 +1,63 @@
+// _login-content.scss
+
+.login-content {
+    background: $purple;
+    color: $white;
+    width: 100%;
+    max-width: 112rem;
+    margin: 0 auto;
+    padding: 7rem 2rem;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 200vw;
+        height: 100%;
+        background: $purple;
+        z-index: -1;
+    }
+
+    .title {
+        border-bottom: 0.1rem solid $white;
+        margin: 0 0 2rem;
+    }
+
+    .subtitle {
+        margin: 0 0 4rem;
+    }
+
+    .file-wrapper {
+
+        // Hide blocked content
+        pre {
+            display: none;
+
+            & + h1 {
+                display: none;
+            }
+        }
+
+        h1 {
+
+            a, a:hover, a:active, a:visited, a:link {
+                display: block;
+                color: $white;
+
+                &:hover {
+
+                }
+            }
+
+            @media only screen and (max-width: $tablet) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: $phone) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}

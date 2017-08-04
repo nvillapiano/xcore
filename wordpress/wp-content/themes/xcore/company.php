@@ -37,7 +37,7 @@
                     </h3>
                 </section>
             </div>
-            <div class="image" style="background-image: url('<?php the_field('image'); ?>');">
+            <div class="image" style="background-image: url('<?php the_field('summary_image'); ?>');">
             </div>
         </div>
     </div>
@@ -52,9 +52,8 @@
                         <?php the_field('about_summary'); ?>
                     </h4>
                 </div>
-                <div class="icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon1.svg">
-                </div>
+                <div class="image" style="background-image: url('<?php the_field('about_image'); ?>');">
+            </div>
             </div>
         </article>
         <article class="use-case" id="management-team">
