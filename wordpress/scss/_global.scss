@@ -62,3 +62,10 @@ video.responsive-video {
 .overflow {
   overflow: hidden;
 }
+
+html, body {
+
+  &.overflow {
+    overflow: hidden;
+  }
+}

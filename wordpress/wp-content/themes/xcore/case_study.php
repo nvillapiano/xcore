@@ -48,8 +48,10 @@
                         <?php the_field('what_is_it'); ?>
                     </h4>
                 </div>
-                <div class="icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon1.svg">
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon1.svg">
+                    </div>
                 </div>
             </div>
         </article>
@@ -63,8 +65,10 @@
                         <?php the_field('usage_today'); ?>
                     </h4>
                 </div>
-                <div class="icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon2.svg">
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon2.svg">
+                    </div>
                 </div>
             </div>
         </article>
@@ -78,8 +82,10 @@
                         <?php the_field('adapting_technology_to_the_card'); ?>
                     </h4>
                 </div>
-                <div class="icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon3.svg">
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon3.svg">
+                    </div>
                 </div>
             </div>
         </article>
@@ -93,8 +99,10 @@
                         <?php the_field('xcores_process'); ?>
                     </h4>
                 </div>
-                <div class="icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon4.svg">
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon4.svg">
+                    </div>
                 </div>
             </div>
         </article>

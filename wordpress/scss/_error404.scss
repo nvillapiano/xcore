@@ -1,0 +1,16 @@
+// _error404.scss
+
+.error404 {
+    background: url(../images/xcore-bg.png) no-repeat #404B97;
+    background-size: contain;
+    background-position: 101% 0%;
+    background-attachment: fixed;
+
+    .content {
+        color: $white;
+        min-height: calc(100vh - 25rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

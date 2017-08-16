@@ -5,6 +5,11 @@
     .fold {
         // height: calc(100vh - 12rem);
         // overflow: scroll;
+        //
+        // width: 100%;
+        // max-width: 112rem;
+        // margin: 0 auto;
+        // padding: 0 2rem;
     }
 
     .slider {
@@ -137,6 +142,10 @@
                     background: $blue;
                 }
             }
+        }
+
+        @media only screen and (max-width: $phone) {
+            bottom: 0.9rem;
         }
     }
 }

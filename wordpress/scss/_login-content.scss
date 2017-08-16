@@ -1,13 +1,15 @@
 // _login-content.scss
 
 .login-content {
-    background: $purple;
+    // background: $purple;
     color: $white;
     width: 100%;
-    max-width: 112rem;
-    margin: 0 auto;
-    padding: 7rem 2rem;
     position: relative;
+    //
+    background: url(../images/xcore-bg.png) no-repeat $purple;
+    background-size: contain;
+    background-position: 101% 0%;
+    background-attachment: fixed;
 
     &:after {
         content: '';
@@ -20,6 +22,14 @@
         z-index: -1;
     }
 
+    .login-content-wrapper {
+        width: 100%;
+        min-height: calc(100vh - 25rem);
+        max-width: 112rem;
+        margin: 0 auto;
+        padding: 7rem 2rem;
+    }
+
     .title {
         border-bottom: 0.1rem solid $white;
         margin: 0 0 2rem;
@@ -27,6 +37,18 @@
 
     .subtitle {
         margin: 0 0 4rem;
+    }
+
+    .login-message {
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $blue;
+            border-bottom: 0.1rem solid transparent;
+
+            &:hover {
+                border-bottom: 0.1rem solid $blue;
+            }
+        }
     }
 
     .file-wrapper {
@@ -60,4 +82,13 @@
             }
         }
     }
+
+    @media only screen and (max-width: $tablet) {
+        background: url(../images/xcore-bg.png) no-repeat #404B97;
+        background-size: cover;
+        background-position: left 0%;
+        background-attachment: fixed;
+    }
 }
+
+

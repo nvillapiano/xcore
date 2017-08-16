@@ -8,7 +8,7 @@ Template Name: Case Study
     <div class="fold">
         <div class="slider">
 
-        <?php echo do_shortcode('[bxslider id="52"]') ?>
+        <?php echo do_shortcode('[bxslider id="home2"]') ?>
 
         <?php
         // TO SHOW THE PAGE CONTENTS
@@ -33,22 +33,20 @@ Template Name: Case Study
                                 Solutions
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
+                                <?php the_field('solutions'); ?>
                             </p>
                         </div>
                     </a>
                     <a href="services" class="col">
                         <div class="icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/gears.svg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/gears.svg">
                         </div>
                         <div class="copy">
                             <div class="title">
                                 Services
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
+                                <?php the_field('services'); ?>
                             </p>
                         </div>
                     </a>

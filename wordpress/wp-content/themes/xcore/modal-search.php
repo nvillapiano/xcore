@@ -38,6 +38,16 @@
                 wp_reset_postdata();?>
                 <?php
                     global $post;
+                    $args = array( 'posts_per_page' => -1, 'post_type' => 'services');
+                    $myposts = get_posts( $args );
+                    foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                        <li>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </li>
+                <?php endforeach;
+                wp_reset_postdata();?>
+                <?php
+                    global $post;
                     $args = array( 'posts_per_page' => -1, 'post_type' => 'case_study');
                     $myposts = get_posts( $args );
                     foreach ( $myposts as $post ) : setup_postdata( $post ); ?>

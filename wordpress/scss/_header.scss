@@ -2,6 +2,36 @@
 
 .header {
     background: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    transition: transform 0.3s;
+
+    &.nav-up {
+        transform: translateY(-100%);
+
+        @media only screen and (max-width: $tablet) {
+            transform: none;
+        }
+    }
+
+    &.nav-down {
+        transform: translateY(0);
+
+        @media only screen and (max-width: $tablet) {
+            transform: none;
+        }
+    }
+
+    & + * {
+        margin-top: 12rem;
+
+        @media only screen and (max-width: $laptop) {
+            margin-top: 9.2rem;
+        }
+    }
 
     @media only screen and (max-width: $tablet) {
         position: fixed;

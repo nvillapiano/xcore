@@ -52,13 +52,15 @@
             .image {
                 position: absolute;
                 top: 20rem;
-                right: -15%;
-                max-width: 40%;
+                // right: -15%;
+                right: 0;
+                max-width: calc(40% - 5rem);
                 width: 100%;
                 max-height: 55rem;
                 height: 100%;
                 background-size: contain;
                 background-repeat: no-repeat;
+                background-position: right center;
             }
         }
     }
@@ -78,7 +80,7 @@
             .hero-wrapper {
 
                 .copy {
-                    width: calc(100% - 35rem);
+                    width: calc(100% - 30rem);
 
                     .breadcrumbs {
                         // white-space: nowrap;
@@ -86,7 +88,7 @@
                 }
 
                 .image {
-                    max-width: 45rem;
+                    max-width: 28rem;
                 }
             }
         }

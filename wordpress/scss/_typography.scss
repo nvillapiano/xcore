@@ -114,6 +114,8 @@ a, a:hover, a:active, a:visited, a:link {
     background: $white;
     margin: 6rem 0 0;
     border: 0.2rem solid $white;
+    text-align: center;
+    padding: 0 5.5rem;
 
     &:hover {
         cursor: pointer;

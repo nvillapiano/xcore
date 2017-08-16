@@ -16,6 +16,8 @@
 
                 <h2>
                     <?php the_title(''); ?>
+                    <br>
+                    <?php the_field('subtitle'); ?>
                 </h2>
 
                 <h4>

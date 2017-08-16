@@ -1,30 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 174 174">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        mask: url(#mask);
-      }
-    </style>
-    <mask id="mask" x="0" y="0" width="174" height="174" maskUnits="userSpaceOnUse">
-      <g transform="translate(0 0)">
-        <g id="mask-2">
-          <polygon id="path-1" class="cls-1" points="174 0 0 0 0 174 174 174 174 0"/>
-        </g>
-      </g>
-    </mask>
-  </defs>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.2 239.3">
   <title>icon1</title>
-  <g id="Homepage">
-    <g id="Healthcare-Use-Case-Copy-2">
-      <g id="Page-1">
-        <g class="cls-2">
-          <path id="Fill-1" class="cls-1" d="M99.27,131.82l-4.05-4.05a53.94,53.94,0,0,0,0-81.52l4.05-4.05a59.66,59.66,0,0,1,0,89.63Zm-9.55-9.55-4.05-4.05a40.52,40.52,0,0,0,0-62.43l4.05-4.05a46.21,46.21,0,0,1,0,70.54Zm-9.83-9.83-4.07-4.07a26.73,26.73,0,0,0,0-42.73l4.07-4.07a32.4,32.4,0,0,1,0,50.88Zm-15.5-15.5a9.94,9.94,0,1,1,10-9.94,9.94,9.94,0,0,1-10,9.94ZM87,0a87,87,0,1,0,87,87A87,87,0,0,0,87,0Z" transform="translate(0 0)"/>
-        </g>
-      </g>
-    </g>
-  </g>
+  <circle cx="149.3" cy="211" r="28.3"/>
+  <path d="M200.6,159.6a72.61,72.61,0,0,0-102.6,0L80.3,141.9a97.78,97.78,0,0,1,138,0Z"/>
+  <path d="M240.6,119.6a129.28,129.28,0,0,0-182.7,0L40.2,101.9c60.1-60.1,157.9-60.1,218.1,0Z"/>
+  <path d="M280.7,79.5a185.89,185.89,0,0,0-263,0L0,61.8a210.76,210.76,0,0,1,298.2,0Z"/>
 </svg>

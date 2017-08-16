@@ -45,7 +45,7 @@
         }
     }
 
-    .icon {
+    .icon-wrapper {
         position: absolute;
         top: 0;
         right: 0;
@@ -53,8 +53,15 @@
         height: 100%;
         text-align: right;
 
-        img {
-            width: 19rem;
+        .icon {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+
+            img {
+                width: 19rem;
+            }
         }
     }
 
@@ -72,13 +79,17 @@
             width: 100%;
 
             h2 {
-                width: calc(100% - 7rem);
+                width: calc(100% - 10rem);
                 margin: 0 0 5rem;
             }
         }
 
-        .icon {
+        .icon-wrapper {
             width: 6rem;
+
+            .icon {
+                height: 6rem;
+            }
         }
 
         &.is-contact {

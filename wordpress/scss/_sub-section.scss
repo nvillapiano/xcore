@@ -11,11 +11,6 @@
         margin: 0 0 5.5rem;
     }
 
-    @media only screen and (max-width: $phone) {
-        width: 100%;
-        margin: 0 0 3.5rem;
-    }
-
     .image {
         height: 17rem;
         background-size: cover;
@@ -45,7 +40,7 @@
         .caret {
             width: 1.3rem;
             position: absolute;
-            top: 0;
+            top: 0.7rem;
             right: 0;
 
             svg {
@@ -78,5 +73,26 @@
                 }
             }
         }
+    }
+
+    @media only screen and (max-width: $tablet) {
+        width: calc( ( 100% / 2 ) - ( 2.5rem / 2 ) );
+
+        &:first-of-type, &:nth-of-type(4) {
+            margin: 0 0 5.5rem;
+        }
+
+        &:nth-of-type(odd) {
+            margin: 0 2.5rem 5.5rem 0;
+        }
+
+        &:nth-of-type(even) {
+            margin: 0 0 5.5rem 0;
+        }
+    }
+
+    @media only screen and (max-width: $phone) {
+        width: 100%;
+        margin: 0 0 3.5rem !important;
     }
 }
