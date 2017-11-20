@@ -113,7 +113,7 @@
                         Contact Us
                     </h2>
                     <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique justo. Nam in felis quis odio tempor ullamcorper at sed quam. Aliquam erat volutpat. Quisque non ultricies metus.
+                        <?php the_field('contact_us'); ?>
                     </h2>
                     <div class="button">
                         Contact

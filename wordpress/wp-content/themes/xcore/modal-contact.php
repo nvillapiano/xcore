@@ -12,9 +12,12 @@
               </g>
             </svg>
         </div>
+        <?php query_posts( array ('post_type' => 'contacttext', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
+        <?php endwhile; ?>                  
         <h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          <?php the_field('text'); ?>
         </h4>
         <?php echo do_shortcode('[contact-form-7 id="42" title="Contact form 1"]'); ?>
     </div>
