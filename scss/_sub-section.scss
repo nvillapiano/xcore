@@ -1,0 +1,66 @@
+// _sub-section.scss
+
+.sub-section {
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5.5rem;
+
+    .image {
+        height: 17rem;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .meta {
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        height: 6rem;
+        padding: 1.3rem 2.3rem;
+
+        &:hover {
+            // background: $dark-purple;
+            background: $blue;
+
+            a, a:hover, a:active, a:visited, a:link {
+                color: $white;
+
+                &:hover {
+
+                }
+            }
+
+            .caret {
+
+                svg {
+
+                    .cls-1 {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $purple;
+            transition: none;
+            max-width: 20rem;
+
+            &:hover {
+
+            }
+        }
+
+        .caret {
+            width: 1.3rem;
+
+            svg {
+
+                .cls-1 {
+                    fill: $purple;
+                }
+            }
+        }
+    }
+}

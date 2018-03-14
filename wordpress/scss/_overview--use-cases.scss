@@ -1,0 +1,66 @@
+// _overview--use-cases.scss
+
+.overview--use-cases {
+
+    h3 {
+        margin: 3rem 0 0;
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $white;
+            border-bottom: 0.1rem solid $white;
+
+            &:hover {
+                color: $blue;
+                border-bottom: 0.1rem solid $blue;
+            }
+        }
+    }
+}
+
+#useCases {
+    display: flex;
+    width: 100%;
+    max-width: 94rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 30vw 0 0;
+
+    .sub-section {
+        width: calc( ( 100% / 3 ) - ( 5rem / 2 ) );
+        min-width: 28rem;
+        background: $white;
+        position: relative;
+        justify-content: space-between;
+        margin: 0 2.5rem 5.5rem 0;
+
+        @media only screen and (max-width: $phone) {
+            width: 100%;
+            margin: 0 0 3.5rem;
+        }
+
+        .copy {
+            color: $purple;
+            padding: 2rem 2.5rem 4rem;
+
+            h5 {
+                text-transform: uppercase;
+                min-height: 12rem;
+            }
+
+            p {
+                @include gotham-book();
+                font-size: 1.5rem;
+                line-height: 1.4667;
+                letter-spacing: -0.48px;
+            }
+        }
+
+        .meta {
+            background: $greyf2;
+
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
+}

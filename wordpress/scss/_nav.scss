@@ -1,0 +1,265 @@
+// _nav.scss
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include contentWidth();
+    padding: 3rem 2rem;
+    position: relative;
+    z-index: 11;
+    background: $white;
+
+    .logo {
+        min-width: 16rem;
+
+        svg {
+
+        }
+    }
+
+    .links-wrapper {
+        white-space: nowrap;
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+
+        a, a:hover, a:active, a:visited, a:link {
+            @include gotham-bold;
+            font-size: 1.4rem;
+            color: $dark-grey;
+            text-transform: uppercase;
+            margin: 0 7.5rem 0 0;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .search-trigger {
+        width: 2.4rem;
+        min-width: 2.4rem;
+
+        svg {
+
+            .cls-1 {
+                fill: $white;
+            }
+
+            .cls-2 {
+                mask: url(#mask);
+            }
+
+            .cls-3 {
+                fill: $purple;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            svg {
+
+                .cls-3 {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        width: 3rem;
+        background: $white;
+        position: relative;
+        z-index: 101;
+        //
+        display: none;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 0.3rem;
+            margin: 0 0 0.5rem;
+            background: $purple;
+            transition: all 0.3s;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            span {
+                background: $blue;
+            }
+        }
+
+        &.contract {
+
+            span {
+                background: $blue;
+
+                &:nth-of-type(1) {
+                    transform: translateY(0.8rem);
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: translateY(-0.8rem);
+                }
+            }
+        }
+
+        &.x-close {
+
+            span {
+
+                &:nth-of-type(1) {
+                    transform: translateY(0.8rem) rotate(45deg);
+                }
+
+                &:nth-of-type(2) {
+
+                }
+
+                &:nth-of-type(3) {
+                    transform: translateY(-0.8rem) rotate(-45deg);
+                }
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -2.4rem;
+            left: -100vw;
+            width: 150vw;
+            height: 6.6rem;
+            background: $white;
+            z-index: -1;
+        }
+    }
+
+    @media only screen and (max-width: $laptop) {
+        padding: 2rem;
+
+        .logo {
+            min-width: 12rem
+        }
+
+        .nav-links {
+            flex-grow: 2;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 0 0 3.5rem;
+
+            a, a:hover, a:active, a:visited, a:link {
+                margin: 0 3.5rem 0 0;
+
+                &:hover {
+
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet) {
+        padding: 1rem 2rem;
+
+        .logo {
+            width: 10rem;
+            z-index: 102;
+        }
+
+        .links-wrapper {
+            position: fixed;
+            top: 6.6rem;
+            left: 0;
+            width: 100vw;
+            height: calc(100% - 6.5rem);
+            z-index: 100;
+            background: rgba($dark-purple, 0);
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding: 4rem 2rem;
+            //
+            transform: translateX(100%);
+            pointer-events: none;
+            transition: all 0.4s;
+
+            &.show {
+                background: rgba($dark-purple, 0.985);
+                transform: translateX(0);
+                pointer-events: all;
+            }
+
+            .nav-links {
+                margin: 0;
+                flex-direction: column;
+                position: relative;
+                top: 0;
+                right: 0;
+                justify-content: flex-start;
+                flex-grow: initial;
+                text-align: right;
+
+                a, a:hover, a:active, a:visited, a:link {
+                    margin: 0 0 2.5rem;
+                    font-size: 3rem;
+                    color: $white;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+
+            .search-trigger {
+                width: initial;
+                min-width: initial;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    width: 2.6rem;
+                    min-width: 2.4rem;
+
+                    .cls-3 {
+                        fill: $blue;
+                    }
+                }
+
+                &:after {
+                    content: 'Search';
+                    @include gotham-bold();
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    margin: 0 0 0 1rem;
+                    color: $white;
+                }
+
+                &:hover {
+
+                    &:after {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}

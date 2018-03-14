@@ -1,0 +1,14 @@
+// _content.scss
+
+.content {
+    @include contentWidth();
+}
+
+.row {
+    display: flex;
+}
+
+.vert {
+    display: flex;
+    flex-direction: column;
+}

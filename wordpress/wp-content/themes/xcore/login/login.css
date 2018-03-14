@@ -1,0 +1,22 @@
+body.login {
+    background: #404B97;
+}
+
+.login form {
+    background: none;
+    box-shadow: none;
+}
+
+.login label {
+    color: #fff;
+    font-weight: initial;
+    font-family: "gotham-book",sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: -1.27px;
+}
+
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+
+}

@@ -1,0 +1,71 @@
+// _footer.scss
+
+.footer {
+    @include contentWidth();
+    font-size: 1.3rem;
+    line-height: 2;
+    justify-content: space-between;
+    padding: 7rem 2rem 4.5rem;
+    background: $light-grey;
+    position: relative;
+
+    @media only screen and (max-width: $phone) {
+        flex-direction: column;
+        padding: 4rem 2rem;
+
+        .col {
+
+            &:first-of-type {
+
+                small {
+                    display: none;
+                }
+            }
+
+            &:last-of-type {
+
+                small {
+
+                    &:last-of-type {
+
+                        &:after {
+                            content: '©2017 All Rights Reserved.';
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .col {
+
+        img {
+            max-width: 16rem;
+            margin: 0 0 4.5rem;
+        }
+
+        small {
+            display: block;
+        }
+
+        a, a:hover, a:active, a:visited, a:link {
+            color: $dark-grey;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50vw;
+        width: 200vw;
+        height: 100%;
+        background: $light-grey;
+        z-index: -1;
+    }
+}

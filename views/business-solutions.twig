@@ -1,0 +1,13 @@
+<!-- Business Solutions -->
+
+{% include 'components/header.twig' %}
+
+{% include 'components/overview.twig' with
+    {
+        isBusinessSolutions: true,
+        title: 'Solutions',
+        hasUseCases: false
+    }
+%}
+
+{% include 'components/footer.twig' %}

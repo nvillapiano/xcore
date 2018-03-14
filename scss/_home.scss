@@ -1,0 +1,75 @@
+// _home.scss
+
+.home {
+
+    .fold {
+        // height: calc(100vh - 12rem);
+        // overflow: scroll;
+    }
+
+    .slider {
+        background: $greyEC;
+    }
+
+    .home-nav {
+
+        .row {
+
+            .col {
+                width: 100%;
+                margin: 7rem 6.5rem;
+                text-align: center;
+                border: 0.2rem solid $purple;
+                padding: 6.5rem 9rem 8.5rem;
+                position: relative;
+                color: $purple;
+                transition: none;
+
+                .icon {
+                    position: absolute;
+                    top: -1.3rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 4.8rem + 3.2rem;
+                    padding: 0 1.6rem;
+                    background: $white;
+                    z-index: 2;
+
+                    img {
+
+                    }
+                }
+
+                .copy {
+
+                    .title {
+                        @include gotham-medium();
+                        font-size: 2.1rem;
+                        letter-spacing: -0.67px;
+                    }
+
+                    p {
+
+                    }
+                }
+
+                & + .col {
+
+                    .icon {
+                        width: 4rem + 3.2rem;
+                        top: -2.5rem;
+                    }
+                }
+
+                &:hover {
+                    color: $white;
+                    background: $purple;
+
+                    .icon {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

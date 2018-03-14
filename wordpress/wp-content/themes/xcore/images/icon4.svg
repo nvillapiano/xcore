@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3c478f;
+      }
+    </style>
+  </defs>
+  <title>icon4</title>
+  <g>
+    <path class="cls-1" d="M22.29,12.29a1,1,0,0,1,1.41,0L26,14.59l9.29-9.29a1,1,0,0,1,1.41,0l3,3a1,1,0,0,1,0,1.41l-13,13a1,1,0,0,1-1.41,0l-6-6a1,1,0,0,1,0-1.41ZM30,26A13,13,0,1,0,17,13,13,13,0,0,0,30,26Z" transform="translate(0 0)"/>
+    <path class="cls-1" d="M37.59,9,36,7.41l-9.29,9.29a1,1,0,0,1-1.41,0L23,14.41,21.41,16,26,20.59Z" transform="translate(0 0)"/>
+    <path class="cls-1" d="M15,13c0-.34,0-.67.05-1H0v6H15.88A14.91,14.91,0,0,1,15,13" transform="translate(0 0)"/>
+    <path class="cls-1" d="M45,13a14.91,14.91,0,0,1-.87,5H60V12H44.95c0,.33.05.66.05,1" transform="translate(0 0)"/>
+    <polygon class="cls-1" points="24 36 32 36 32 34 24 34 24 36"/>
+    <path class="cls-1" d="M57,5H42.67a14.91,14.91,0,0,1,2,5H60V8a3,3,0,0,0-3-3" transform="translate(0 0)"/>
+    <path class="cls-1" d="M17.33,5H3A3,3,0,0,0,0,8v2H15.3a14.87,14.87,0,0,1,2-5" transform="translate(0 0)"/>
+    <polygon class="cls-1" points="8 36 16 36 16 34 8 34 8 36"/>
+    <path class="cls-1" d="M50,30a5,5,0,1,1-3.5,8.57,5,5,0,1,1,0-7.13A5,5,0,0,1,50,30ZM22,38H34V32H22ZM6,38H18V32H6ZM30,28a15,15,0,0,1-13.26-8H0V42a3,3,0,0,0,3,3H57a3,3,0,0,0,3-3V20H43.26A15,15,0,0,1,30,28Z" transform="translate(0 0)"/>
+    <path class="cls-1" d="M40,35a3,3,0,0,0,5.6,1.5,1,1,0,0,1,.76-.48h.27a1,1,0,0,1,.77.48,3,3,0,1,0,0-3,1,1,0,0,1-.78.48h-.27a1,1,0,0,1-.76-.48A3,3,0,0,0,40,35" transform="translate(0 0)"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<!-- Business Solutions -->
+
+{% include 'components/header.twig' %}
+
+{% include 'components/overview.twig' with
+    {
+        title: 'Healthcare',
+        hasBreadcrumbDepth: true,
+        hasUseCases: true
+    }
+%}
+
+{% include 'components/footer.twig' %}

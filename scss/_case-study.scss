@@ -1,0 +1,70 @@
+// _case-study.scss
+
+.case-study {
+    background: $purple;
+    color: $white;
+
+    .hero {
+        background: url('../images/xcore-bg.png') 125% center no-repeat;
+        background-color: $white;
+        background-size: contain;
+        color: $grey62;
+        padding: 4.5rem 0 10rem;
+        margin: 0 0 -0.1rem;
+        border-top: 0.1rem solid $grey62;
+
+        .hero-wrapper {
+            @include contentWidth();
+            padding: 0 2rem;
+
+            .breadcrumbs {
+
+                a, a:hover, a:active, a:visited, a:link {
+                    color: $grey62;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+
+            .copy {
+                width: 60%;
+
+                h2 {
+                    margin: 0 0 4rem;
+                }
+
+                .case-study--links {
+                    margin: 3.5rem 0 0;
+
+                    a, a:hover, a:active, a:visited, a:link {
+                        color: $grey62;
+
+                        &:hover {
+                            color: $purple;
+                            border-bottom: 0.1rem solid $purple;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                position: absolute;
+                top: 20rem;
+                right: -15%;
+                max-width: 40%;
+                width: 100%;
+                max-height: 55rem;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .use-cases {
+        @include contentWidth();
+        padding: 0 2rem;
+    }
+}

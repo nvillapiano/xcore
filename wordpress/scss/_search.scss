@@ -1,0 +1,79 @@
+// _search.scss
+
+.search {
+
+    .search-input {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: -2rem;
+            left: 0;
+            width: 2.4rem;
+        }
+    }
+
+    input {
+        border: none;
+        border-bottom: 0.1rem solid $white;
+        width: 100%;
+        @include gotham-book();
+        font-size: 4rem;
+        background: transparent;
+        color: $white;
+        display: inline-block;
+        padding: 0 0 1rem 4.5rem;
+
+        &:focus {
+            outline: none;
+            border-color: $blue;
+        }
+    }
+
+    ul {
+        margin: 1rem 0 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+
+            a, a:hover, a:active, a:visited, a:link {
+                @include gotham-book();
+                font-size: 4rem;
+                color: $white;
+                padding: 1rem 1rem 2rem 1rem;
+                border: 0.1rem solid transparent;
+                display: block;
+                width: 100%;
+
+                &:hover {
+                    border: 0.1rem solid $white;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $phone) {
+
+        input {
+            font-size: 3rem;
+        }
+
+        ul {
+
+            li {
+
+                a, a:hover, a:active, a:visited, a:link {
+                    font-size: 3rem;
+
+                    &:hover {
+
+                    }
+                }
+            }
+        }
+    }
+}

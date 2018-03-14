@@ -1,6 +1,10 @@
 html, body {
   @include font-smoothing;
   @include transition( opacity 0.3s ease-out );
+  font-size: 62.5%;
+  @include gotham-medium;
+  color: $dark-grey;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -45,4 +49,40 @@ video.responsive-video {
     width: 100%;
     height: 100%;
   }
+}
+
+// Variables
+
+$contentWidth: 112rem;
+
+// Global styles - project specific
+
+.breadcrumbs {
+    font-size: 1.5rem;
+    @include gotham-book();
+    margin: 0 0 3rem;
+
+    a, a:hover, a:active, a:visited, a:link {
+        color: $white;
+        @include gotham-book();
+
+        &.active {
+            @include gotham-medium();
+            letter-spacing: -0.48px;
+        }
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+::selection {
+  background: $blue;
+  color: $white;
+  opacity: 1;
+}
+
+.overflow {
+  overflow: hidden;
 }

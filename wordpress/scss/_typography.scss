@@ -1,0 +1,133 @@
+// _typography.scss
+
+h1 {
+    font-weight: initial;
+    @include gotham-book();
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: -1.27px;
+    margin: 0;
+
+    @media only screen and (max-width: $phone) {
+        font-size: 3.2rem;
+    }
+}
+
+h2 {
+    font-weight: initial;
+    @include gotham-medium();
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: -1.27px;
+    margin: 0;
+
+    @media only screen and (max-width: $phone) {
+        font-size: 3.2rem;
+    }
+}
+
+h3 {
+    font-weight: initial;
+    @include gotham-medium();
+    font-size: 3rem;
+    line-height: 1.5667;
+    letter-spacing: -1px;
+    margin: 0;
+
+    @media only screen and (max-width: $phone) {
+        font-size: 2.4rem;
+    }
+}
+
+h4 {
+    font-weight: initial;
+    @include gotham-book();
+    font-size: 3rem;
+    line-height: 1.333;
+    letter-spacing: -0.3px;
+    margin: 0;
+
+    @media only screen and (max-width: $phone) {
+        font-size: 2.4rem;
+    }
+}
+
+h5 {
+    font-weight: initial;
+    @include gotham-medium();
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin: 0;
+}
+
+h6 {
+    font-weight: initial;
+    @include gotham-bold();
+    font-size: 1.7rem;
+    line-height: 1;
+    letter-spacing: -0.24px;
+    margin: 0;
+}
+
+p {
+    font-weight: initial;
+    @include gotham-book;
+    font-size: 1.8rem;
+    line-height: 1.222;
+    letter-spacing: -0.57px;
+}
+
+strong {
+    font-weight: initial;
+}
+
+em {
+    font-weight: initial;
+}
+
+small {
+    font-size: 1.3rem;
+    letter-spacing: -0.67px;
+    @include gotham-book();
+}
+
+a, a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+
+    &:hover {
+
+    }
+}
+
+.button {
+    min-width: 20rem;
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include gotham-medium();
+    font-size: 3rem;
+    line-height: 1;
+    color: $blue;
+    background: $white;
+    margin: 6rem 0 0;
+    border: 0.2rem solid $white;
+    text-align: center;
+    padding: 0 5.5rem;
+
+    &:hover {
+        cursor: pointer;
+        color: $white;
+        background: $blue;
+    }
+}
+
+button {
+    @extend .button;
+}
+
+input[type="submit"] {
+    @extend .button;
+}

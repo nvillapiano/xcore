@@ -1,0 +1,33 @@
+// _overview.scss
+
+.overview {
+    background: url('../images/xcore-bg.png') no-repeat $purple;
+    background-size: 50%;
+    background-position: 101% 0%;
+    background-attachment: fixed;
+    color: $white;
+    padding: 5.5rem 0 13rem;
+    // background: red;
+
+    .overview-wrapper {
+        @include contentWidth();
+        padding: 0 2rem;
+    }
+
+    h2 {
+        margin: 0 0 4.5rem;
+    }
+
+    h4 {
+        width: 100%;
+        max-width: 82rem;
+    }
+
+    .sub-sections {
+        display: flex;
+        width: 94rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5.5rem 0 0;
+    }
+}

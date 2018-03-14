@@ -1,0 +1,40 @@
+<!-- Use case -->
+
+{#
+    {% include 'components/use-case.twig' with
+        {
+            title: '',
+            iconSrc: ''
+        }
+    %}
+ #}
+
+<article class="use-case {{ isContact ? 'is-contact' }}" id="{{title|lower|replace({' ': '-'})}}">
+    <div class="use-case--wrapper">
+        <div class="copy">
+            <h2>
+                {{title}}
+            </h2>
+            {% if isContact %}
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique justo. Nam in felis quis odio tempor ullamcorper at sed quam. Aliquam erat volutpat. Quisque non ultricies metus.
+                </h2>
+                <div class="button">
+                    Contact
+                </div>
+            {% else %}
+                <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique justo. Nam in felis quis odio tempor ullamcorper at sed quam. Aliquam erat volutpat. Quisque non ultricies metus.
+                </h4>
+            {% endif %}
+        </div>
+        {% if isContact %}
+        {% else %}
+            <div class="icon">
+                <div class="icon-wrapper">
+                    <img src="{{iconSrc}}">
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</article>

@@ -1,0 +1,44 @@
+// _breadcrumbs.scss
+
+.breadcrumbs {
+    font-size: 1.5rem;
+    @include gotham-book();
+    margin: 0 0 3rem;
+
+    a, a:hover, a:active, a:visited, a:link {
+        color: $white;
+        @include gotham-book();
+        white-space: nowrap;
+
+        &.active {
+            @include gotham-medium();
+            letter-spacing: -0.48px;
+        }
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .dynamic-breadcrumbs {
+
+        a, a:hover, a:active, a:visited, a:link {
+            text-transform: capitalize;
+
+            &:after {
+                content: " > ";
+            }
+
+            &:last-of-type {
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:hover {
+
+            }
+        }
+    }
+}

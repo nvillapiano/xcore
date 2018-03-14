@@ -1,0 +1,88 @@
+// _contact.scss
+
+.contact {
+    color: $white;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 60rem;
+        @include gotham-book();
+        font-size: 3rem;
+        padding: 5.5rem 0;
+
+        p {
+            margin: 0;
+
+            label {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0 0 5.5rem;
+                font-size: 3rem;
+                letter-spacing: -1px;
+                line-height: 1;
+
+                %inputStyles {
+                    width: 40rem;
+                    border: 0.1rem solid $white;
+                    background: none;
+                    padding: 1rem;
+                    color: $white;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $blue;
+                    }
+                }
+
+                input {
+                    @extend %inputStyles;
+                }
+
+                textarea {
+                    @extend %inputStyles;
+                    min-height: 22rem;
+                    height: 22rem;
+                }
+            }
+
+            &:last-of-type {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                margin: -6.5rem 0 5.5rem;
+            }
+        }
+    }
+
+    .screen-reader-response {
+        font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+
+        form {
+
+            p {
+
+                label {
+                    font-size: 2.4rem;
+                    flex-direction: column;
+
+                    span {
+                        margin: 1rem 0 0 0;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

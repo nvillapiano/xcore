@@ -1,0 +1,114 @@
+// _case-study.scss
+
+.case-study {
+    background: $purple;
+    color: $white;
+
+    .hero {
+        background: url('../images/xcore-bg.png') 125% top no-repeat;
+        background-color: $white;
+        background-size: contain;
+        color: $grey62;
+        padding: 4.5rem 0 10rem;
+        margin: 0 0 -0.1rem;
+        border-top: 0.1rem solid $grey62;
+
+        .hero-wrapper {
+            @include contentWidth();
+            padding: 0 2rem;
+
+            .breadcrumbs {
+
+                a, a:hover, a:active, a:visited, a:link {
+                    color: $grey62;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+
+            .copy {
+                width: 60%;
+
+                h2 {
+                    margin: 0 0 4rem;
+                }
+
+                .case-study--links {
+                    margin: 3.5rem 0 0;
+
+                    a, a:hover, a:active, a:visited, a:link {
+                        color: $grey62;
+
+                        &:hover {
+                            color: $purple;
+                            border-bottom: 0.1rem solid $purple;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                position: absolute;
+                top: 20rem;
+                // right: -15%;
+                right: 0;
+                max-width: calc(40% - 5rem);
+                width: 100%;
+                max-height: 55rem;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+        }
+    }
+
+    .use-cases {
+        @include contentWidth();
+        padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: $laptop) {
+
+        .hero {
+            background: url('../images/xcore-bg.png') 55rem bottom no-repeat;
+            background-color: $white;
+            background-size: contain;
+
+            .hero-wrapper {
+
+                .copy {
+                    width: calc(100% - 30rem);
+
+                    .breadcrumbs {
+                        // white-space: nowrap;
+                    }
+                }
+
+                .image {
+                    max-width: 28rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet) {
+
+        .hero {
+
+            .hero-wrapper {
+
+                .copy {
+                    width: 100%;
+                }
+
+                .image {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
